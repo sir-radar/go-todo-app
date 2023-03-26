@@ -54,7 +54,7 @@ func main(){
 
 		for i, t := range todos{
 			if t.ID == id {
-				todos[i].Done = true
+				todos[i].Done = !todos[i].Done
 				break;
 			}
 		}
